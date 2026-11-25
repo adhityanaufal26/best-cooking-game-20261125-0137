@@ -1,0 +1,27 @@
+/* Ember Kitchen page chrome: centres the 1280x720 canvas on a warm dark
+   backdrop. The game itself draws everything on the canvas. */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #241a10; }
+body {
+  font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stage { width: min(1280px, 100vw); padding: 12px; }
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+  background: #f7e8c9;
+  cursor: pointer;
+}
+.foot {
+  margin: 10px 4px 0;
+  color: #c9b18a;
+  font-size: 13px;
+  text-align: center;
+}
